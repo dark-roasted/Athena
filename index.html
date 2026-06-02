@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athena | Private Minecraft Server</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -52,8 +53,10 @@
 
     <style>
         body {
-            background-color: #0d0c0a; /* Derin Antik Siyah / Tapınak Taşı */
-            color: #f4efe2; /* Fildişi Beyazı metinler */
+            background-color: #0d0c0a;
+            /* Derin Antik Siyah / Tapınak Taşı */
+            color: #f4efe2;
+            /* Fildişi Beyazı metinler */
             overflow-x: hidden;
         }
 
@@ -61,13 +64,16 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #0d0c0a;
         }
+
         ::-webkit-scrollbar-thumb {
             background: rgba(212, 175, 55, 0.2);
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(212, 175, 55, 0.5);
         }
@@ -93,6 +99,7 @@
             transform: translateY(30px);
             transition: all 0.9s cubic-bezier(0.25, 1, 0.5, 1);
         }
+
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
@@ -107,9 +114,32 @@
             opacity: 0.35;
             animation: blob 20s infinite alternate;
         }
-        .orb-1 { top: -15%; left: -10%; width: 600px; height: 600px; background: #684f1b; }
-        .orb-2 { bottom: -10%; right: -10%; width: 700px; height: 700px; background: #47320c; animation-delay: 3s; }
-        .orb-3 { top: 35%; left: 35%; width: 500px; height: 500px; background: #5c4308; animation-delay: 6s; }
+
+        .orb-1 {
+            top: -15%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: #684f1b;
+        }
+
+        .orb-2 {
+            bottom: -10%;
+            right: -10%;
+            width: 700px;
+            height: 700px;
+            background: #47320c;
+            animation-delay: 3s;
+        }
+
+        .orb-3 {
+            top: 35%;
+            left: 35%;
+            width: 500px;
+            height: 500px;
+            background: #5c4308;
+            animation-delay: 6s;
+        }
 
         /* Custom Golden Toast */
         #toast {
@@ -128,11 +158,12 @@
             transform: translateX(-50%);
             font-family: 'Cinzel', serif;
             letter-spacing: 1px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(12px);
             transition: visibility 0s, opacity 0.4s ease-in-out, bottom 0.4s ease-in-out;
             opacity: 0;
         }
+
         #toast.show {
             visibility: visible;
             opacity: 1;
@@ -149,7 +180,8 @@
     <nav class="fixed w-full z-40 top-0 transition-all duration-300" id="navbar">
         <div class="glass-panel mx-auto max-w-7xl mt-4 rounded-xl px-6 py-4 flex justify-between items-center w-[95%]">
             <div class="flex items-center gap-3">
-                <img src="Assets/Athena-Logo.png" alt="Athena Logo" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://via.placeholder.com/40?text=A'">
+                <img src="Assets/Athena-Logo.png" alt="Athena Logo" class="w-10 h-10 rounded-full object-cover"
+                    onerror="this.src='https://via.placeholder.com/40?text=A'">
                 <span class="font-cinzel font-bold text-base text-ancientGold tracking-widest mt-0.5">ATHENA</span>
             </div>
             <div class="hidden md:flex gap-8 text-xs font-semibold tracking-wider uppercase font-cinzel text-gray-400">
@@ -157,9 +189,11 @@
                 <a href="#features" class="hover:text-ancientGold transition-colors duration-300">Features</a>
                 <a href="#connection" class="hover:text-ancientGold transition-colors duration-300">Connect</a>
                 <a href="#downloads" class="hover:text-ancientGold transition-colors duration-300">Downloads</a>
+                <a href='#'
             </div>
             <div>
-                <a href="https://discord.gg/theathena" target="_blank" class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-black font-cinzel font-bold text-xs tracking-wider py-2.5 px-6 rounded-md uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                <a href="https://discord.gg/theathena" target="_blank"
+                    class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-black font-cinzel font-bold text-xs tracking-wider py-2.5 px-6 rounded-md uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
                     <i class="fa-brands fa-discord mr-2"></i>Discord
                 </a>
             </div>
@@ -170,156 +204,174 @@
         <div class="animate-float mb-8">
             <div class="relative">
                 <div class="absolute inset-0 bg-olympusAmber blur-[70px] opacity-20 rounded-full"></div>
-                <img src="Assets/Athena-Logo.png" alt="Athena Server" class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover shadow-2xl relative z-10" onerror="this.src='https://via.placeholder.com/200?text=Athena'">
+                <img src="Assets/Athena-Logo.png" alt="Athena Server"
+                    class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover shadow-2xl relative z-10"
+                    onerror="this.src='https://via.placeholder.com/200?text=Athena'">
             </div>
         </div>
 
-        <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-amber-400 to-yellow-600 font-cinzel leading-tight uppercase">
-            ATHENA <br> <span class="text-2xl md:text-4xl text-ivoryCream mt-3 font-medium block tracking-widest">SERVER OPENING</span>
+        <h1
+            class="text-5xl md:text-7xl font-black mb-6 tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-amber-400 to-yellow-600 font-cinzel leading-tight uppercase">
+            ATHENA <br> <span class="text-2xl md:text-4xl text-ivoryCream mt-3 font-medium block tracking-widest">SERVER
+                OPENING</span>
         </h1>
-        
+
         <p class="max-w-2xl text-sm md:text-base text-gray-400 mb-10 leading-relaxed tracking-wide">
-            More than just a game. Establish ideologies, forge empires, explore space, and command the ultimate automated dynasty. Total freedom in a seamlessly modded 1.20.1 Forge world.
+            More than just a game. Establish ideologies, forge empires, explore space, and command the ultimate
+            automated dynasty. Total freedom in a seamlessly modded 1.20.1 Forge world.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 font-cinzel text-xs tracking-widest uppercase font-bold">
-            <a href="#downloads" class="glass-panel hover-glow text-ancientGold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3">
+            <a href="#downloads"
+                class="glass-panel hover-glow text-ancientGold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3">
                 <i class="fa-solid fa-download"></i> Get Modpack
             </a>
-            <a href="#connection" class="bg-gradient-to-r from-amber-500 to-olympusAmber text-black hover:brightness-110 py-4 px-8 rounded-lg transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.25)] flex items-center justify-center gap-3">
+            <a href="#connection"
+                class="bg-gradient-to-r from-amber-500 to-olympusAmber text-black hover:brightness-110 py-4 px-8 rounded-lg transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.25)] flex items-center justify-center gap-3">
                 <i class="fa-solid fa-gamepad"></i> Join the Server
             </a>
         </div>
     </section>
 
-    <section id="connection" class="py-24 px-4 z-10 relative border-t border-amber-500/5">
-        <div class="max-w-5xl mx-auto">
+    <section style="display: flex;justify-content: center;align-items: center;" id="connection" class="py-24 px-4 z-10 relative border-t border-amber-500/5">
+        <div class="max-w-5xl">
             <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl font-bold font-cinzel text-ancientGold tracking-widest uppercase mb-4">Connection Details</h2>
-                <p class="text-gray-400 text-sm">Supports both PC (Java) and Mobile (Bedrock) cross-play.</p>
+                <h2 class="text-3xl font-bold font-cinzel text-ancientGold tracking-widest uppercase mb-4">Connection
+                    Details</h2>
+                <p class="text-gray-400 text-sm">Currently, Athena, is an Java-Only Server.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div style="display: flex;justify-content: center;align-items: center;" class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="glass-panel rounded-xl p-8 hover-glow transition-all duration-300 reveal">
-                    <div class="w-12 h-12 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-6 border border-amber-500/20">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-6 border border-amber-500/20">
                         <i class="fa-brands fa-java text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold font-cinzel tracking-wider mb-2 uppercase">Java Players (PC)</h3>
-                    <p class="text-gray-400 mb-6 text-xs leading-relaxed">Use this IP for standard PC Minecraft clients. Make sure to install the mods first.</p>
-                    
-                    <div class="bg-black/30 rounded-lg p-4 flex justify-between items-center border border-amber-500/10">
+                    <p class="text-gray-400 mb-6 text-xs leading-relaxed">Use this IP for standard PC Minecraft clients.
+                        Make sure to install the mods first.</p>
+
+                    <div
+                        class="bg-black/30 rounded-lg p-4 flex justify-between items-center border border-amber-500/10">
                         <div>
-                            <span class="text-[10px] text-amber-600 uppercase font-bold font-cinzel tracking-wider block mb-1">Server IP</span>
-                            <code class="font-mono text-sm text-amber-300 font-bold" id="java-ip">157.85.95.183:23531</code>
+                            <span
+                                class="text-[10px] text-amber-600 uppercase font-bold font-cinzel tracking-wider block mb-1">Server
+                                IP</span>
+                            <code class="font-mono text-sm text-amber-300 font-bold"
+                                id="java-ip">157.85.95.183:23531</code>
                         </div>
-                        <button onclick="copyToClipboard('java-ip')" class="w-9 h-9 rounded-md bg-amber-500/5 hover:bg-amber-500/10 border border-amber-500/10 text-ancientGold transition-colors flex items-center justify-center">
+                        <button onclick="copyToClipboard('java-ip')"
+                            class="w-9 h-9 rounded-md bg-amber-500/5 hover:bg-amber-500/10 border border-amber-500/10 text-ancientGold transition-colors flex items-center justify-center">
                             <i class="fa-regular fa-copy text-sm"></i>
                         </button>
                     </div>
                 </div>
 
-                <div class="glass-panel rounded-xl p-8 hover-glow transition-all duration-300 reveal">
-                    <div class="w-12 h-12 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-6 border border-amber-500/20">
-                        <i class="fa-solid fa-mobile-screen-button text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold font-cinzel tracking-wider mb-2 uppercase">Bedrock Players</h3>
-                    <p class="text-gray-400 mb-6 text-xs leading-relaxed">For mobile, console, or Windows 10/11 editions. Add the port separately.</p>
-                    
-                    <div class="space-y-3">
-                        <div class="bg-black/30 rounded-lg p-4 flex justify-between items-center border border-amber-500/10">
-                            <div>
-                                <span class="text-[10px] text-amber-600 uppercase font-bold font-cinzel tracking-wider block mb-1">Server IP</span>
-                                <code class="font-mono text-sm text-amber-300 font-bold" id="bedrock-ip">157.85.95.183</code>
-                            </div>
-                            <button onclick="copyToClipboard('bedrock-ip')" class="w-9 h-9 rounded-md bg-amber-500/5 hover:bg-amber-500/10 border border-amber-500/10 text-ancientGold transition-colors flex items-center justify-center">
-                                <i class="fa-regular fa-copy text-sm"></i>
-                            </button>
-                        </div>
-                        <div class="bg-black/30 rounded-lg p-4 flex justify-between items-center border border-amber-500/10">
-                            <div>
-                                <span class="text-[10px] text-amber-600 uppercase font-bold font-cinzel tracking-wider block mb-1">Port</span>
-                                <code class="font-mono text-sm text-amber-300 font-bold" id="bedrock-port">23531</code>
-                            </div>
-                            <button onclick="copyToClipboard('bedrock-port')" class="w-9 h-9 rounded-md bg-amber-500/5 hover:bg-amber-500/10 border border-amber-500/10 text-ancientGold transition-colors flex items-center justify-center">
-                                <i class="fa-regular fa-copy text-sm"></i>
-                            </button>
-                        </div>
-                    </div>
+                <div class="space-y-3">
                 </div>
             </div>
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 
     <section id="features" class="py-24 px-4 z-10 relative border-t border-amber-500/5 bg-black/10">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl font-bold font-cinzel text-ancientGold tracking-widest uppercase mb-4">Server Dynamics</h2>
-                <p class="text-gray-400 text-sm max-w-2xl mx-auto">This isn't just survival. It's a complex sandbox where you can build civilizations, wage high-tech wars, or just vibe in your own automated farm.</p>
+                <h2 class="text-3xl font-bold font-cinzel text-ancientGold tracking-widest uppercase mb-4">Server
+                    Dynamics</h2>
+                <p class="text-gray-400 text-sm max-w-2xl mx-auto">This isn't just survival. It's a complex sandbox
+                    where you can build civilizations, wage high-tech wars, or just vibe in your own automated farm.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-building-columns"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Ideologies & Empires</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Found your own ideology, build massive empires from scratch, and rule the lands your way.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Ideologies &
+                        Empires</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Found your own ideology, build massive empires from
+                        scratch, and rule the lands your way.</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-sun"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Space Exploration</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Earth is not the limit. Build rockets, leave the atmosphere, and conquer new planets.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Space
+                        Exploration</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Earth is not the limit. Build rockets, leave the
+                        atmosphere, and conquer new planets.</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-crown"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Dynasty System</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Get married, raise children, arrange marriages for power, and accumulate vast wealth and status.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Dynasty
+                        System</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Get married, raise children, arrange marriages for
+                        power, and accumulate vast wealth and status.</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-wheat-awn"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Automated Workforce</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Capture villages and employ villagers. Turn them into your personal 'falla7' (farmers) or workers.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Automated
+                        Workforce</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Capture villages and employ villagers. Turn them
+                        into your personal 'falla7' (farmers) or workers.</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">War Machines & Nukes</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Creative destruction. Design advanced war machines or utilize full-scale nuclear systems.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">War Machines
+                        & Nukes</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Creative destruction. Design advanced war machines
+                        or utilize full-scale nuclear systems.</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-gears"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Advanced Mechanisms</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Automate everything. Build complex factories and functional mechanism setups.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Advanced
+                        Mechanisms</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Automate everything. Build complex factories and
+                        functional mechanism setups.</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-scroll"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">UN Diplomacy</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Establish a United Nations-style assembly and sit at the negotiation table (Mufawadat).</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">UN Diplomacy
+                    </h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Establish a United Nations-style assembly and sit
+                        at the negotiation table (Mufawadat).</p>
                 </div>
 
                 <div class="glass-panel p-6 rounded-xl hover:-translate-y-1.5 transition-transform duration-300 reveal">
-                    <div class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
+                    <div
+                        class="w-11 h-11 rounded-lg bg-amber-500/10 text-ancientGold flex items-center justify-center mb-4 text-lg border border-amber-500/20">
                         <i class="fa-solid fa-dove"></i>
                     </div>
-                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Total Freedom</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">Not into politics? No problem. Do whatever you want, whenever you want. Pure fun.</p>
+                    <h3 class="font-bold font-cinzel tracking-wider text-sm mb-2 text-ivoryCream uppercase">Total
+                        Freedom</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Not into politics? No problem. Do whatever you
+                        want, whenever you want. Pure fun.</p>
                 </div>
             </div>
         </div>
@@ -328,37 +380,49 @@
     <section id="downloads" class="py-24 px-4 z-10 relative border-t border-amber-500/5">
         <div class="max-w-4xl mx-auto">
             <div class="glass-panel rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-                
-                <div class="absolute -top-24 -right-24 w-64 h-64 bg-amber-600 rounded-full blur-[90px] opacity-10"></div>
-                
+
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-amber-600 rounded-full blur-[90px] opacity-10">
+                </div>
+
                 <div class="text-center mb-10 relative z-10 reveal">
-                    <span class="bg-amber-500/10 text-ancientGold border border-amber-500/20 px-4 py-1 rounded-full font-cinzel text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Required Files</span>
-                    <h2 class="text-2xl font-bold font-cinzel text-ivoryCream uppercase tracking-wider mb-4">Download Center</h2>
+                    <span
+                        class="bg-amber-500/10 text-ancientGold border border-amber-500/20 px-4 py-1 rounded-full font-cinzel text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Required
+                        Files</span>
+                    <h2 class="text-2xl font-bold font-cinzel text-ivoryCream uppercase tracking-wider mb-4">Download
+                        Center</h2>
                     <p class="text-gray-400 text-xs leading-relaxed max-w-xl mx-auto">
-                        To join the server, you must download the <strong class="text-ancientGold">Athena Modpack (77 mods)</strong> and <strong class="text-ancientGold">3 unofficial CurseForge mods</strong>. Total of 80 mods.<br>
+                        To join the server, you must download the <strong class="text-ancientGold">Athena Modpack (77
+                            mods)</strong> and <strong class="text-ancientGold">3 unofficial CurseForge mods</strong>.
+                        Total of 80 mods.<br>
                         Ensure your game version is set to <strong class="text-amber-400">1.20.1 Forge</strong>.
                     </p>
                 </div>
 
                 <div class="space-y-4 relative z-10 text-xs">
-                    <div class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
                         <div class="flex items-center gap-4 mb-4 sm:mb-0">
-                            <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center shadow-md">
+                            <div
+                                class="w-11 h-11 rounded-lg bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center shadow-md">
                                 <i class="fa-solid fa-box-open text-black text-sm"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold font-cinzel tracking-wide text-sm text-ivoryCream uppercase">Athena 2.0.0 Modpack</h4>
+                                <h4 class="font-bold font-cinzel tracking-wide text-sm text-ivoryCream uppercase">Athena
+                                    2.0.0 Modpack</h4>
                                 <p class="text-[11px] text-gray-500 mt-0.5">.mrpack format • Contains 77 base mods</p>
                             </div>
                         </div>
-                        <a href="Downloads/Athena 2.0.0.mrpack" download class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-olympusAmber text-black font-cinzel font-bold py-2.5 px-6 rounded-md uppercase transition-all duration-300 text-center hover:brightness-110">
+                        <a href="Downloads/Athena 2.0.0.mrpack" download
+                            class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-olympusAmber text-black font-cinzel font-bold py-2.5 px-6 rounded-md uppercase transition-all duration-300 text-center hover:brightness-110">
                             <i class="fa-solid fa-cloud-arrow-down"></i> Download
                         </a>
                     </div>
 
-                    <div class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
                         <div class="flex items-center gap-4 mb-4 sm:mb-0">
-                            <div class="w-9 h-9 rounded-md bg-amber-500/5 flex items-center justify-center border border-amber-500/10">
+                            <div
+                                class="w-9 h-9 rounded-md bg-amber-500/5 flex items-center justify-center border border-amber-500/10">
                                 <i class="fa-solid fa-file-code text-ancientGold text-sm"></i>
                             </div>
                             <div>
@@ -366,14 +430,17 @@
                                 <p class="text-[10px] text-gray-600 font-mono">ftb-library-forge-2001.2.12.jar</p>
                             </div>
                         </div>
-                        <a href="Downloads/ftb-library-forge-2001.2.12.jar" download class="w-full sm:w-auto glass-panel border border-amber-500/20 hover:bg-amber-500/10 text-ancientGold font-cinzel font-semibold py-2 px-5 rounded-md uppercase transition-all duration-300 text-center">
+                        <a href="Downloads/ftb-library-forge-2001.2.12.jar" download
+                            class="w-full sm:w-auto glass-panel border border-amber-500/20 hover:bg-amber-500/10 text-ancientGold font-cinzel font-semibold py-2 px-5 rounded-md uppercase transition-all duration-300 text-center">
                             <i class="fa-solid fa-download"></i> Get .jar
                         </a>
                     </div>
 
-                    <div class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
                         <div class="flex items-center gap-4 mb-4 sm:mb-0">
-                            <div class="w-9 h-9 rounded-md bg-amber-500/5 flex items-center justify-center border border-amber-500/10">
+                            <div
+                                class="w-9 h-9 rounded-md bg-amber-500/5 flex items-center justify-center border border-amber-500/10">
                                 <i class="fa-solid fa-file-code text-ancientGold text-sm"></i>
                             </div>
                             <div>
@@ -381,14 +448,17 @@
                                 <p class="text-[10px] text-gray-600 font-mono">ftb-chunks-forge-2001.3.7.jar</p>
                             </div>
                         </div>
-                        <a href="Downloads/ftb-chunks-forge-2001.3.7.jar" download class="w-full sm:w-auto glass-panel border border-amber-500/20 hover:bg-amber-500/10 text-ancientGold font-cinzel font-semibold py-2 px-5 rounded-md uppercase transition-all duration-300 text-center">
+                        <a href="Downloads/ftb-chunks-forge-2001.3.7.jar" download
+                            class="w-full sm:w-auto glass-panel border border-amber-500/20 hover:bg-amber-500/10 text-ancientGold font-cinzel font-semibold py-2 px-5 rounded-md uppercase transition-all duration-300 text-center">
                             <i class="fa-solid fa-download"></i> Get .jar
                         </a>
                     </div>
 
-                    <div class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center transition-all duration-300 reveal">
                         <div class="flex items-center gap-4 mb-4 sm:mb-0">
-                            <div class="w-9 h-9 rounded-md bg-amber-500/5 flex items-center justify-center border border-amber-500/10">
+                            <div
+                                class="w-9 h-9 rounded-md bg-amber-500/5 flex items-center justify-center border border-amber-500/10">
                                 <i class="fa-solid fa-file-code text-ancientGold text-sm"></i>
                             </div>
                             <div>
@@ -396,7 +466,8 @@
                                 <p class="text-[10px] text-gray-600 font-mono">ftb-teams-forge-2001.3.2.jar</p>
                             </div>
                         </div>
-                        <a href="Downloads/ftb-teams-forge-2001.3.2.jar" download class="w-full sm:w-auto glass-panel border border-amber-500/20 hover:bg-amber-500/10 text-ancientGold font-cinzel font-semibold py-2 px-5 rounded-md uppercase transition-all duration-300 text-center">
+                        <a href="Downloads/ftb-teams-forge-2001.3.2.jar" download
+                            class="w-full sm:w-auto glass-panel border border-amber-500/20 hover:bg-amber-500/10 text-ancientGold font-cinzel font-semibold py-2 px-5 rounded-md uppercase transition-all duration-300 text-center">
                             <i class="fa-solid fa-download"></i> Get .jar
                         </a>
                     </div>
@@ -405,13 +476,63 @@
         </div>
     </section>
 
+    <!-- Active Members List -->
+            <div class="glass-panel rounded-2xl p-8 md:p-12 shadow-2xl mt-16 relative overflow-hidden reveal">
+                <div class="absolute -top-24 -left-24 w-64 h-64 bg-amber-600 rounded-full blur-[90px] opacity-10">
+                </div>
+
+                <div class="text-center mb-10 relative z-10">
+                    <span
+                        class="bg-amber-500/10 text-ancientGold border border-amber-500/20 px-4 py-1 rounded-full font-cinzel text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Community
+                        Spotlight</span>
+                    <h2 class="text-2xl font-bold font-cinzel text-ivoryCream uppercase tracking-wider mb-4">Active
+                        Members</h2>
+                    <p class="text-gray-400 text-xs leading-relaxed max-w-xl mx-auto">
+                        A special shoutout to our most active and dedicated members who keep the Athena spirit alive!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 relative z-10">
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col items-center transition-all duration-300">
+                        <img style="max-width: 500px; max-height: 500px;border-radius: 10px" src="./Assets/players/Banners/George-Banner.jpg" alt="Member Banner"
+                            class="w-full h-auto rounded-xl mb-4 border border-amber-500/20">
+                        <img alt="Member Profile Picture." src="./Assets/players/ProfilePictures/PFP-George.webp"
+                            class="w-16 h-16 rounded-full border-2 border-amber-500/20 mb-2">
+                        <h4 class="font-bold font-cinzel tracking-wide text-sm text-ivoryCream uppercase">LiLZeng1 / George</h4>
+                        <p class="text-[10px] text-gray-400 mt-1">Joined: May 2026</p>
+                    </div>
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col items-center transition-all duration-300">
+                        <img style="max-width: 500px; max-height: 500px;border-radius: 10px" src="./Assets/players/Banners/Jano-Banner.webp" alt="Member Banner"
+                            class="w-full h-auto rounded-xl mb-4 border border-amber-500/20">
+                            <img alt="Member Profile Picture." src="./Assets/players/ProfilePictures/PFP-Jano.webp"
+                            class="w-16 h-16 rounded-full border-2 border-amber-500/20 mb-2">
+                        <h4 class="font-bold font-cinzel tracking-wide text-sm text-ivoryCream uppercase">Jano</h4>
+                        <p class="text-[10px] text-gray-400 mt-1">Joined: May 2026</p>
+                    </div>
+                    <div
+                        class="bg-black/20 hover:bg-black/40 border border-amber-500/5 rounded-xl p-4 flex flex-col items-center transition-all duration-300">
+                        <img style="max-width: 500px;border-radius: 10px;min-width: 250px;max-height: 320px;" src="./Assets/players/Banners/BlazingCrusader-Banner.png" alt="Member Banner"
+                            class="w-full h-auto rounded-xl mb-4 border border-amber-500/20">
+                            <img alt="Member Profile Picture." src="./Assets/players/ProfilePictures/PFP-BlazingCrusader.webp"
+                            class="w-16 h-16 rounded-full border-2 border-amber-500/20 mb-2">
+                        <h4 class="font-bold font-cinzel tracking-wide text-sm text-ivoryCream uppercase">BlazingCrusader / Elie</h4>
+                        <p class="text-[10px] text-gray-400 mt-1">Joined: May 2026</p>
+                    </div>
+                </div>
+            </div>
+
+
     <footer class="py-12 text-center relative z-10 border-t border-amber-500/5 mt-16 glass-panel rounded-t-2xl">
         <p class="text-ancientGold font-cinzel font-bold text-xs tracking-widest mb-3">ATHENA SERVER © 2026</p>
-        <p class="text-gray-500 text-[11px] font-sans tracking-wide">Private friends server. Play nice, or get nuked.</p>
-        <!-- Github Page -->
-         <a class="relative z-12 mt-18 glass-panel rounded-t-2xl" href="https://github.com/dark-roasted" target="_blank" class="absolute top-4 right-4 text-gray-400 hover:text-ancientGold transition-colors">
+        <p class="text-gray-500 text-[11px] font-sans tracking-wide">Private friends server. Play nice, or get nuked.
+        </p>
+        <!-- Github -->
+        <a class="relative z-12 mt-18 glass-panel rounded-t-2xl" href="https://github.com/dark-roasted" target="_blank"
+            class="absolute top-4 right-4 text-gray-400 hover:text-ancientGold transition-colors">
             <i class="fa-brands fa-github text-lg">
-                <br> Contact The Developer
+                <br> Contact THE Developer
             </i>
         </a>
     </footer>
@@ -433,7 +554,7 @@
         function showToast() {
             const toast = document.getElementById("toast");
             toast.className = "show";
-            setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+            setTimeout(function () { toast.className = toast.className.replace("show", ""); }, 3000);
         }
 
         // Scroll Reveal Animations
